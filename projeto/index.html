@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Reciclagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Simulador de Reciclagem e Compostagem</h1>
+        <p>Arraste os itens para as lixeiras ou composteiras corretas!</p>
+
+        <div class="items-container">
+            <img src="assets/plastic-bottle.png" class="item" draggable="true" data-category="reciclavel" alt="Garrafa Plástica">
+            <img src="assets/banana-peel.png" class="item" draggable="true" data-category="organico" alt="Casca de Banana">
+            <img src="assets/newspaper.png" class="item" draggable="true" data-category="reciclavel" alt="Jornal">
+            <img src="assets/glass-bottle.png" class="item" draggable="true" data-category="vidro" alt="Garrafa de Vidro">
+            <img src="assets/aluminum-can.png" class="item" draggable="true" data-category="metal" alt="Lata de Alumínio">
+            <img src="assets/plastic-bag.png" class="item" draggable="true" data-category="rejeitos" alt="Sacola Plástica">
+        </div>
+
+        <div class="bins-container">
+            <div class="bin" data-category="reciclavel">
+                <p>Reciclável</p>
+            </div>
+            <div class="bin" data-category="organico">
+                <p>Orgânico</p>
+            </div>
+            <div class="bin" data-category="vidro">
+                <p>Vidro</p>
+            </div>
+            <div class="bin" data-category="metal">
+                <p>Metal</p>
+            </div>
+            <div class="bin" data-category="rejeitos">
+                <p>Rejeitos</p>
+            </div>
+        </div>
+
+        <div id="score">Pontuação: 0</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
